@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5001B0E715CF4F860047C8DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5001B0E615CF4F860047C8DC /* UIKit.framework */; };
+		5001B0E915CF4F860047C8DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5001B0E815CF4F860047C8DC /* Foundation.framework */; };
+		5001B0EB15CF4F860047C8DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5001B0EA15CF4F860047C8DC /* CoreGraphics.framework */; };
+		5001B0ED15CF4F860047C8DC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5001B0EC15CF4F860047C8DC /* CoreData.framework */; };
+		5001B0F315CF4F860047C8DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5001B0F115CF4F860047C8DC /* InfoPlist.strings */; };
+		5001B0F515CF4F860047C8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5001B0F415CF4F860047C8DC /* main.m */; };
+		5001B0F915CF4F860047C8DC /* PTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5001B0F815CF4F860047C8DC /* PTAppDelegate.m */; };
+		5001B10415CF50FD0047C8DC /* PTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5001B10315CF50FD0047C8DC /* PTRootViewController.m */; };
+		5001B12115D058270047C8DC /* mainResponseBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B11E15D058270047C8DC /* mainResponseBackground@2x.png */; };
+		5001B12615D05F170047C8DC /* badWeatherResponseBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12415D05F170047C8DC /* badWeatherResponseBackground@2x.png */; };
+		5001B12715D05F170047C8DC /* nightResponseBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12515D05F170047C8DC /* nightResponseBackground@2x.png */; };
+		5001B12A15D07F830047C8DC /* PTStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5001B12915D07F830047C8DC /* PTStatusButton.m */; };
+		5001B12F15D083530047C8DC /* nightButtonActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12B15D083530047C8DC /* nightButtonActive@2x.png */; };
+		5001B13015D083530047C8DC /* nightButtonInactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12C15D083530047C8DC /* nightButtonInactive@2x.png */; };
+		5001B13115D083530047C8DC /* weatherButtonActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12D15D083530047C8DC /* weatherButtonActive@2x.png */; };
+		5001B13215D083530047C8DC /* weatherButtonInactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B12E15D083530047C8DC /* weatherButtonInactive@2x.png */; };
+		5001B13815D099B20047C8DC /* blackCorner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B13715D099B20047C8DC /* blackCorner@2x.png */; };
+		5001B13B15D09F0E0047C8DC /* PTEntriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5001B13A15D09F0E0047C8DC /* PTEntriesViewController.m */; };
+		5001B14315D0A7150047C8DC /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B14015D0A7150047C8DC /* settingsIcon@2x.png */; };
+		5001B14415D0A7150047C8DC /* closeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B14115D0A7150047C8DC /* closeIcon@2x.png */; };
+		5001B14515D0A7150047C8DC /* navigationBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B14215D0A7150047C8DC /* navigationBarBackground@2x.png */; };
+		5001B14915D0ADBF0047C8DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5001B14815D0ADBF0047C8DC /* QuartzCore.framework */; };
+		5001B14B15D1C0990047C8DC /* addButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B14A15D1C0990047C8DC /* addButtonBackground@2x.png */; };
+		5001B15115D1DA8C0047C8DC /* buttonDrawerBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B15015D1DA8C0047C8DC /* buttonDrawerBackground@2x.png */; };
+		5001B15915D2CBF10047C8DC /* entryCellBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5001B15815D2CBF10047C8DC /* entryCellBackground@2x.png */; };
+		500E648115D5E6DB0092B206 /* InitialData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 500E648015D5E6DB0092B206 /* InitialData.plist */; };
+		500E648815DA1BBC0092B206 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 500E648415DA1BBC0092B206 /* README.txt */; };
+		500E648915DA1BBC0092B206 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 500E648515DA1BBC0092B206 /* release_notes.txt */; };
+		500E648B15DA1BF80092B206 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 500E648A15DA1BF80092B206 /* libz.dylib */; };
+		50348D4615DF0D57002DFD56 /* PTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50348D4515DF0D57002DFD56 /* PTSettingsViewController.m */; };
+		50348D4915DF2F66002DFD56 /* log.permitlog in Resources */ = {isa = PBXBuildFile; fileRef = 50348D4815DF2F66002DFD56 /* log.permitlog */; };
+		50348D4B15E01952002DFD56 /* entriesListIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50348D4A15E01952002DFD56 /* entriesListIcon@2x.png */; };
+		50348D5115E02919002DFD56 /* returnToEntriesButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50348D5015E02919002DFD56 /* returnToEntriesButton@2x.png */; };
+		5037709815E18A2F00EDBE68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5037709715E18A2F00EDBE68 /* Default@2x.png */; };
+		5037709A15E1B68E00EDBE68 /* barButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5037709915E1B68E00EDBE68 /* barButtonBackground@2x.png */; };
+		503770A015E35BD300EDBE68 /* PTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5037709F15E35BD300EDBE68 /* PTAlertView.m */; };
+		503770A215E35CBE00EDBE68 /* alertViewBigShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503770A115E35CBE00EDBE68 /* alertViewBigShadow@2x.png */; };
+		503770A415E4102700EDBE68 /* popupBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503770A315E4102700EDBE68 /* popupBackgroundImage@2x.png */; };
+		503770A615E468DB00EDBE68 /* alertViewButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503770A515E468DB00EDBE68 /* alertViewButtonBackground@2x.png */; };
+		503770A815E4695600EDBE68 /* alertViewCancelButtonBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503770A715E4695600EDBE68 /* alertViewCancelButtonBackground@2x.png */; };
+		504D911B15DDA1520013EFE2 /* States.plist in Resources */ = {isa = PBXBuildFile; fileRef = 504D911A15DDA1520013EFE2 /* States.plist */; };
+		50531E8A160A75020057DC95 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50531E89160A75020057DC95 /* Default-568h@2x.png */; };
+		50A4324E15D5B339008C5F0E /* PTLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4324D15D5B339008C5F0E /* PTLog.m */; };
+		50A4325215D5B51D008C5F0E /* PTEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A4325115D5B51D008C5F0E /* PTEntry.m */; };
+		50C824D115EFFE5F005E6EE6 /* recordingDrawerBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C824D015EFFE5F005E6EE6 /* recordingDrawerBackground@2x.png */; };
+		50C824D315F0140D005E6EE6 /* pickerViewSelector@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C824D215F0140D005E6EE6 /* pickerViewSelector@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5001B0E215CF4F860047C8DC /* PermitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5001B0E615CF4F860047C8DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5001B0E815CF4F860047C8DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5001B0EA15CF4F860047C8DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5001B0EC15CF4F860047C8DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5001B0F015CF4F860047C8DC /* PermitTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PermitTracker-Info.plist"; sourceTree = "<group>"; };
+		5001B0F215CF4F860047C8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5001B0F415CF4F860047C8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5001B0F615CF4F860047C8DC /* PermitTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PermitTracker-Prefix.pch"; sourceTree = "<group>"; };
+		5001B0F715CF4F860047C8DC /* PTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTAppDelegate.h; sourceTree = "<group>"; };
+		5001B0F815CF4F860047C8DC /* PTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAppDelegate.m; sourceTree = "<group>"; };
+		5001B10215CF50FD0047C8DC /* PTRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRootViewController.h; sourceTree = "<group>"; };
+		5001B10315CF50FD0047C8DC /* PTRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRootViewController.m; sourceTree = "<group>"; };
+		5001B11E15D058270047C8DC /* mainResponseBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainResponseBackground@2x.png"; sourceTree = "<group>"; };
+		5001B12415D05F170047C8DC /* badWeatherResponseBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badWeatherResponseBackground@2x.png"; sourceTree = "<group>"; };
+		5001B12515D05F170047C8DC /* nightResponseBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nightResponseBackground@2x.png"; sourceTree = "<group>"; };
+		5001B12815D07F830047C8DC /* PTStatusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTStatusButton.h; sourceTree = "<group>"; };
+		5001B12915D07F830047C8DC /* PTStatusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTStatusButton.m; sourceTree = "<group>"; };
+		5001B12B15D083530047C8DC /* nightButtonActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nightButtonActive@2x.png"; sourceTree = "<group>"; };
+		5001B12C15D083530047C8DC /* nightButtonInactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nightButtonInactive@2x.png"; sourceTree = "<group>"; };
+		5001B12D15D083530047C8DC /* weatherButtonActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weatherButtonActive@2x.png"; sourceTree = "<group>"; };
+		5001B12E15D083530047C8DC /* weatherButtonInactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weatherButtonInactive@2x.png"; sourceTree = "<group>"; };
+		5001B13715D099B20047C8DC /* blackCorner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackCorner@2x.png"; sourceTree = "<group>"; };
+		5001B13915D09F0E0047C8DC /* PTEntriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEntriesViewController.h; sourceTree = "<group>"; };
+		5001B13A15D09F0E0047C8DC /* PTEntriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTEntriesViewController.m; sourceTree = "<group>"; };
+		5001B14015D0A7150047C8DC /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsIcon@2x.png"; sourceTree = "<group>"; };
+		5001B14115D0A7150047C8DC /* closeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeIcon@2x.png"; sourceTree = "<group>"; };
+		5001B14215D0A7150047C8DC /* navigationBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarBackground@2x.png"; sourceTree = "<group>"; };
+		5001B14815D0ADBF0047C8DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5001B14A15D1C0990047C8DC /* addButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addButtonBackground@2x.png"; sourceTree = "<group>"; };
+		5001B15015D1DA8C0047C8DC /* buttonDrawerBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonDrawerBackground@2x.png"; sourceTree = "<group>"; };
+		5001B15815D2CBF10047C8DC /* entryCellBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entryCellBackground@2x.png"; sourceTree = "<group>"; };
+		500E648015D5E6DB0092B206 /* InitialData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InitialData.plist; sourceTree = "<group>"; };
+		500E648315DA1BBC0092B206 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		500E648415DA1BBC0092B206 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		500E648515DA1BBC0092B206 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		500E648615DA1BBC0092B206 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		500E648A15DA1BF80092B206 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		50348D4415DF0D57002DFD56 /* PTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSettingsViewController.h; sourceTree = "<group>"; };
+		50348D4515DF0D57002DFD56 /* PTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSettingsViewController.m; sourceTree = "<group>"; };
+		50348D4815DF2F66002DFD56 /* log.permitlog */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = log.permitlog; sourceTree = "<group>"; };
+		50348D4A15E01952002DFD56 /* entriesListIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entriesListIcon@2x.png"; sourceTree = "<group>"; };
+		50348D5015E02919002DFD56 /* returnToEntriesButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "returnToEntriesButton@2x.png"; sourceTree = "<group>"; };
+		5037709715E18A2F00EDBE68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5037709915E1B68E00EDBE68 /* barButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "barButtonBackground@2x.png"; sourceTree = "<group>"; };
+		5037709E15E35BD300EDBE68 /* PTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTAlertView.h; sourceTree = "<group>"; };
+		5037709F15E35BD300EDBE68 /* PTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAlertView.m; sourceTree = "<group>"; };
+		503770A115E35CBE00EDBE68 /* alertViewBigShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alertViewBigShadow@2x.png"; sourceTree = "<group>"; };
+		503770A315E4102700EDBE68 /* popupBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupBackgroundImage@2x.png"; sourceTree = "<group>"; };
+		503770A515E468DB00EDBE68 /* alertViewButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alertViewButtonBackground@2x.png"; sourceTree = "<group>"; };
+		503770A715E4695600EDBE68 /* alertViewCancelButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alertViewCancelButtonBackground@2x.png"; sourceTree = "<group>"; };
+		504D911A15DDA1520013EFE2 /* States.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = States.plist; sourceTree = "<group>"; };
+		50531E89160A75020057DC95 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		50A4324C15D5B339008C5F0E /* PTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLog.h; sourceTree = "<group>"; };
+		50A4324D15D5B339008C5F0E /* PTLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLog.m; sourceTree = "<group>"; };
+		50A4325015D5B51D008C5F0E /* PTEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTEntry.h; sourceTree = "<group>"; };
+		50A4325115D5B51D008C5F0E /* PTEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTEntry.m; sourceTree = "<group>"; };
+		50A4325315D5DC8E008C5F0E /* PermitTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PermitTracker.entitlements; sourceTree = "<group>"; };
+		50C824D015EFFE5F005E6EE6 /* recordingDrawerBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordingDrawerBackground@2x.png"; sourceTree = "<group>"; };
+		50C824D215F0140D005E6EE6 /* pickerViewSelector@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickerViewSelector@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5001B0DF15CF4F860047C8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500E648B15DA1BF80092B206 /* libz.dylib in Frameworks */,
+				5001B14915D0ADBF0047C8DC /* QuartzCore.framework in Frameworks */,
+				5001B0E715CF4F860047C8DC /* UIKit.framework in Frameworks */,
+				5001B0E915CF4F860047C8DC /* Foundation.framework in Frameworks */,
+				5001B0EB15CF4F860047C8DC /* CoreGraphics.framework in Frameworks */,
+				5001B0ED15CF4F860047C8DC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5001B0D715CF4F860047C8DC = {
+			isa = PBXGroup;
+			children = (
+				50531E89160A75020057DC95 /* Default-568h@2x.png */,
+				5001B0EE15CF4F860047C8DC /* PermitTracker */,
+				5001B0E515CF4F860047C8DC /* Frameworks */,
+				5001B0E315CF4F860047C8DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5001B0E315CF4F860047C8DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5001B0E215CF4F860047C8DC /* PermitTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5001B0E515CF4F860047C8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500E648A15DA1BF80092B206 /* libz.dylib */,
+				5001B14815D0ADBF0047C8DC /* QuartzCore.framework */,
+				5001B0E615CF4F860047C8DC /* UIKit.framework */,
+				5001B0E815CF4F860047C8DC /* Foundation.framework */,
+				5001B0EA15CF4F860047C8DC /* CoreGraphics.framework */,
+				5001B0EC15CF4F860047C8DC /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5001B0EE15CF4F860047C8DC /* PermitTracker */ = {
+			isa = PBXGroup;
+			children = (
+				50348D4815DF2F66002DFD56 /* log.permitlog */,
+				500E648015D5E6DB0092B206 /* InitialData.plist */,
+				504D911A15DDA1520013EFE2 /* States.plist */,
+				50A4325315D5DC8E008C5F0E /* PermitTracker.entitlements */,
+				500E648215DA1BBC0092B206 /* TestFlightSDK1.0 */,
+				5001B14715D0A7240047C8DC /* Classes */,
+				5001B14615D0A71A0047C8DC /* Images */,
+				5001B0EF15CF4F860047C8DC /* Supporting Files */,
+			);
+			path = PermitTracker;
+			sourceTree = "<group>";
+		};
+		5001B0EF15CF4F860047C8DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5001B0F015CF4F860047C8DC /* PermitTracker-Info.plist */,
+				5001B0F115CF4F860047C8DC /* InfoPlist.strings */,
+				5001B0F415CF4F860047C8DC /* main.m */,
+				5001B0F615CF4F860047C8DC /* PermitTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5001B14615D0A71A0047C8DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				50C824D015EFFE5F005E6EE6 /* recordingDrawerBackground@2x.png */,
+				503770A315E4102700EDBE68 /* popupBackgroundImage@2x.png */,
+				503770A515E468DB00EDBE68 /* alertViewButtonBackground@2x.png */,
+				503770A715E4695600EDBE68 /* alertViewCancelButtonBackground@2x.png */,
+				503770A115E35CBE00EDBE68 /* alertViewBigShadow@2x.png */,
+				50C824D215F0140D005E6EE6 /* pickerViewSelector@2x.png */,
+				5001B14A15D1C0990047C8DC /* addButtonBackground@2x.png */,
+				5037709915E1B68E00EDBE68 /* barButtonBackground@2x.png */,
+				5001B15015D1DA8C0047C8DC /* buttonDrawerBackground@2x.png */,
+				5037709715E18A2F00EDBE68 /* Default@2x.png */,
+				5001B15815D2CBF10047C8DC /* entryCellBackground@2x.png */,
+				5001B11E15D058270047C8DC /* mainResponseBackground@2x.png */,
+				5001B12415D05F170047C8DC /* badWeatherResponseBackground@2x.png */,
+				5001B12515D05F170047C8DC /* nightResponseBackground@2x.png */,
+				5001B12B15D083530047C8DC /* nightButtonActive@2x.png */,
+				5001B12C15D083530047C8DC /* nightButtonInactive@2x.png */,
+				5001B12D15D083530047C8DC /* weatherButtonActive@2x.png */,
+				5001B12E15D083530047C8DC /* weatherButtonInactive@2x.png */,
+				5001B13715D099B20047C8DC /* blackCorner@2x.png */,
+				50348D5015E02919002DFD56 /* returnToEntriesButton@2x.png */,
+				50348D4A15E01952002DFD56 /* entriesListIcon@2x.png */,
+				5001B14015D0A7150047C8DC /* settingsIcon@2x.png */,
+				5001B14115D0A7150047C8DC /* closeIcon@2x.png */,
+				5001B14215D0A7150047C8DC /* navigationBarBackground@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5001B14715D0A7240047C8DC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5037709E15E35BD300EDBE68 /* PTAlertView.h */,
+				5037709F15E35BD300EDBE68 /* PTAlertView.m */,
+				50A4325015D5B51D008C5F0E /* PTEntry.h */,
+				50A4325115D5B51D008C5F0E /* PTEntry.m */,
+				50A4324C15D5B339008C5F0E /* PTLog.h */,
+				50A4324D15D5B339008C5F0E /* PTLog.m */,
+				5001B0F715CF4F860047C8DC /* PTAppDelegate.h */,
+				5001B0F815CF4F860047C8DC /* PTAppDelegate.m */,
+				5001B10215CF50FD0047C8DC /* PTRootViewController.h */,
+				5001B10315CF50FD0047C8DC /* PTRootViewController.m */,
+				5001B13915D09F0E0047C8DC /* PTEntriesViewController.h */,
+				5001B13A15D09F0E0047C8DC /* PTEntriesViewController.m */,
+				50348D4415DF0D57002DFD56 /* PTSettingsViewController.h */,
+				50348D4515DF0D57002DFD56 /* PTSettingsViewController.m */,
+				5001B12815D07F830047C8DC /* PTStatusButton.h */,
+				5001B12915D07F830047C8DC /* PTStatusButton.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		500E648215DA1BBC0092B206 /* TestFlightSDK1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				500E648315DA1BBC0092B206 /* libTestFlight.a */,
+				500E648415DA1BBC0092B206 /* README.txt */,
+				500E648515DA1BBC0092B206 /* release_notes.txt */,
+				500E648615DA1BBC0092B206 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5001B0E115CF4F860047C8DC /* PermitTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5001B0FF15CF4F860047C8DC /* Build configuration list for PBXNativeTarget "PermitTracker" */;
+			buildPhases = (
+				5001B0DE15CF4F860047C8DC /* Sources */,
+				5001B0DF15CF4F860047C8DC /* Frameworks */,
+				5001B0E015CF4F860047C8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PermitTracker;
+			productName = PermitTracker;
+			productReference = 5001B0E215CF4F860047C8DC /* PermitTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5001B0D915CF4F860047C8DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PT;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Max Luzuriaga";
+				TargetAttributes = {
+					5001B0E115CF4F860047C8DC = {
+						DevelopmentTeam = KA3366Q756;
+					};
+				};
+			};
+			buildConfigurationList = 5001B0DC15CF4F860047C8DC /* Build configuration list for PBXProject "PermitTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5001B0D715CF4F860047C8DC;
+			productRefGroup = 5001B0E315CF4F860047C8DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5001B0E115CF4F860047C8DC /* PermitTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5001B0E015CF4F860047C8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5001B0F315CF4F860047C8DC /* InfoPlist.strings in Resources */,
+				5001B12115D058270047C8DC /* mainResponseBackground@2x.png in Resources */,
+				5001B12615D05F170047C8DC /* badWeatherResponseBackground@2x.png in Resources */,
+				5001B12715D05F170047C8DC /* nightResponseBackground@2x.png in Resources */,
+				5001B12F15D083530047C8DC /* nightButtonActive@2x.png in Resources */,
+				5001B13015D083530047C8DC /* nightButtonInactive@2x.png in Resources */,
+				5001B13115D083530047C8DC /* weatherButtonActive@2x.png in Resources */,
+				5001B13215D083530047C8DC /* weatherButtonInactive@2x.png in Resources */,
+				5001B13815D099B20047C8DC /* blackCorner@2x.png in Resources */,
+				5001B14315D0A7150047C8DC /* settingsIcon@2x.png in Resources */,
+				5001B14415D0A7150047C8DC /* closeIcon@2x.png in Resources */,
+				5001B14515D0A7150047C8DC /* navigationBarBackground@2x.png in Resources */,
+				5001B14B15D1C0990047C8DC /* addButtonBackground@2x.png in Resources */,
+				5001B15115D1DA8C0047C8DC /* buttonDrawerBackground@2x.png in Resources */,
+				5001B15915D2CBF10047C8DC /* entryCellBackground@2x.png in Resources */,
+				500E648115D5E6DB0092B206 /* InitialData.plist in Resources */,
+				500E648815DA1BBC0092B206 /* README.txt in Resources */,
+				500E648915DA1BBC0092B206 /* release_notes.txt in Resources */,
+				504D911B15DDA1520013EFE2 /* States.plist in Resources */,
+				50348D4915DF2F66002DFD56 /* log.permitlog in Resources */,
+				50348D4B15E01952002DFD56 /* entriesListIcon@2x.png in Resources */,
+				50348D5115E02919002DFD56 /* returnToEntriesButton@2x.png in Resources */,
+				5037709815E18A2F00EDBE68 /* Default@2x.png in Resources */,
+				5037709A15E1B68E00EDBE68 /* barButtonBackground@2x.png in Resources */,
+				503770A215E35CBE00EDBE68 /* alertViewBigShadow@2x.png in Resources */,
+				503770A415E4102700EDBE68 /* popupBackgroundImage@2x.png in Resources */,
+				503770A615E468DB00EDBE68 /* alertViewButtonBackground@2x.png in Resources */,
+				503770A815E4695600EDBE68 /* alertViewCancelButtonBackground@2x.png in Resources */,
+				50C824D115EFFE5F005E6EE6 /* recordingDrawerBackground@2x.png in Resources */,
+				50C824D315F0140D005E6EE6 /* pickerViewSelector@2x.png in Resources */,
+				50531E8A160A75020057DC95 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5001B0DE15CF4F860047C8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5001B0F515CF4F860047C8DC /* main.m in Sources */,
+				5001B0F915CF4F860047C8DC /* PTAppDelegate.m in Sources */,
+				5001B10415CF50FD0047C8DC /* PTRootViewController.m in Sources */,
+				5001B12A15D07F830047C8DC /* PTStatusButton.m in Sources */,
+				5001B13B15D09F0E0047C8DC /* PTEntriesViewController.m in Sources */,
+				50A4324E15D5B339008C5F0E /* PTLog.m in Sources */,
+				50A4325215D5B51D008C5F0E /* PTEntry.m in Sources */,
+				50348D4615DF0D57002DFD56 /* PTSettingsViewController.m in Sources */,
+				503770A015E35BD300EDBE68 /* PTAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5001B0F115CF4F860047C8DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5001B0F215CF4F860047C8DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5001B0FD15CF4F860047C8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5001B0FE15CF4F860047C8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5001B10015CF4F860047C8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PermitTracker/PermitTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PermitTracker/PermitTracker-Prefix.pch";
+				INFOPLIST_FILE = "PermitTracker/PermitTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PermitTracker/TestFlightSDK1.0\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "024EF120-B49E-42A2-A94D-E6362D38D53E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5001B10115CF4F860047C8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PermitTracker/PermitTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PermitTracker/PermitTracker-Prefix.pch";
+				INFOPLIST_FILE = "PermitTracker/PermitTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PermitTracker/TestFlightSDK1.0\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "024EF120-B49E-42A2-A94D-E6362D38D53E";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5001B0DC15CF4F860047C8DC /* Build configuration list for PBXProject "PermitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5001B0FD15CF4F860047C8DC /* Debug */,
+				5001B0FE15CF4F860047C8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5001B0FF15CF4F860047C8DC /* Build configuration list for PBXNativeTarget "PermitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5001B10015CF4F860047C8DC /* Debug */,
+				5001B10115CF4F860047C8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5001B0D915CF4F860047C8DC /* Project object */;
+}
