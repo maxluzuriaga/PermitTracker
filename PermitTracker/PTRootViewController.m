@@ -48,7 +48,7 @@
 {
     [super viewDidLoad];
     
-    _responseView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+    _responseView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 320, 200)];
     
     // Total View
     
@@ -199,7 +199,7 @@
     
     // Buttons
     
-    UIView *buttonView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 320, 44)];
+    UIView *buttonView = [[UIView alloc] initWithFrame:CGRectMake(0, 220, 320, 44)];
     buttonView.backgroundColor = [UIColor colorWithPatternImage:[[UIImage imageNamed:@"buttonDrawerBackground"] stretchableImageWithLeftCapWidth:160 topCapHeight:0]];
     
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -230,17 +230,20 @@
     
     // Picker View
     
-	_pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 244, 320, 216)];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 264, 320, self.view.frame.size.height - 264)];
+    bgView.backgroundColor = [UIColor whiteColor];
+    
+	_pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 0, 320, 700)];
     _pickerView.dataSource = self;
     _pickerView.delegate = self;
+    [_pickerView reloadAllComponents];
     
-    [self.view addSubview:_pickerView];
+    [bgView addSubview:_pickerView];
     
-    UIImageView *selectionIndicator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pickerViewSelector"]];
-    selectionIndicator.frame = CGRectMake(61, 314, 198, 81);
+    [self.view addSubview:bgView];
     
-    [self.view addSubview:selectionIndicator];
-
+    NSLog(@"%f", _pickerView.frame.size.height);
+    
 //    UIView *daView = [[UIView alloc] initWithFrame:CGRectMake(0, 244, 320, 216)];
 //    
 //    for (int x = 0; x < 5; x++) {
@@ -259,6 +262,11 @@
 //    }
 //    
 //    [self.view addSubview:daView];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarAnimationNone;
 }
 
 - (void)updateUI
@@ -500,16 +508,16 @@
     return 98;
 }
 
-- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
-{
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 75, 60)];
-    label.font = [UIFont boldSystemFontOfSize:55];
-    label.backgroundColor = [UIColor clearColor];
-    label.text = [self pickerView:pickerView titleForRow:row forComponent:component];
-    label.textAlignment = NSTextAlignmentCenter;
-    
-    return label;
-}
+//- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+//{
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 75, 60)];
+//    label.font = [UIFont boldSystemFontOfSize:55];
+//    label.backgroundColor = [UIColor clearColor];
+//    label.text = [self pickerView:pickerView titleForRow:row forComponent:component];
+//    label.textAlignment = NSTextAlignmentCenter;
+//    
+//    return label;
+//}
 
 - (void)viewDidUnload
 {

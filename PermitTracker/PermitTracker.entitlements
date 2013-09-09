@@ -10,7 +10,5 @@
 	<array>
 		<string>$(AppIdentifierPrefix)com.maxluzuriaga.PermitTracker</string>
 	</array>
-	<key>application-identifier</key>
-	<string>KA3366Q756.com.maxluzuriaga.PermitTracker</string>
 </dict>
 </plist>
